@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Akce – Mírové náměstí</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="assets/styles.css">
+
+     <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #fffdfd;
+            color: #000000;
+        }
+
+        header {
+            background: #3d0606;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            background: #6e0000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+         
+           text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background: #6e0000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+
+        .highlight {
+            background: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #310802;
+        }
+    </style>
+</head>
+
+<header>
+    <h1>Akce</h1>
+    <p>Mírové náměstí – Horní Benešov</p>
+</header>
+
+<nav>
+    <a href="index.html">Domů</a>
+    </nav>
+       <section id="akce">
+        <h2>Kulturní a společenské akce</h2>
+        <ul>
+           <p>Městské slavnosti Horní Benešov
+
+        Konají se obvykle v létě (červen nebo červenec).
+        Součástí jsou koncerty, vystoupení místních kapel, taneční soubory, sportovní soutěže a program pro děti.
+        Stánkový prodej s občerstvením, regionálními produkty a řemesly.
+        Vánoční trhy a rozsvícení vánočního stromu </p>
+
+        Probíhá obvykle na začátku prosince.
+        Atmosférický program s koledami, punčem, cukrovím a vánoční výzdobou náměstí.
+        Městský dětský sbor, betlém a setkání s Mikulášem.
+        Velikonoční jarmark </p>
+
+        Jarní trh s tradičními výrobky, vystoupení škol a folklorních souborů.
+        Dětské dílny (malování vajíček, pletení pomlázek).
+        Hudební a kulturní večery </p>
+
+        V letních měsících koncerty pod širým nebem na pódiu přímo na náměstí.
+        Různé žánry – od folku přes pop až po dechovku.
+        Farmářské a řemeslné trhy </p>
+
+        Pravidelně během roku (většinou soboty dopoledne).
+        Nabídka lokálních produktů – sýry, pečivo, maso, sezónní zelenina, ručně vyráběné předměty.
+        </ul>
+    </section>
+    <div class="container">
+
+    
+<footer>
+    © 2026 Město Horní Benešov | Akce
+</footer>
+
+</body>
+</html>
